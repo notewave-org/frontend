@@ -2,8 +2,8 @@
   <div :class="classes.container">
     <Sidebar />
 
-    <div :class="classes.content">
-      Текст
+    <div :class="classes.view">
+      <RouterView />
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ import Sidebar from './components/Sidebar.vue'
   grid-template-columns: 20% 1fr;
   height: 100vh;
 }
-.content {
+.view {
   padding: 16px;
   overflow-y: auto;
 }

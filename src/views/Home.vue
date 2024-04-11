@@ -1,0 +1,3 @@
+<template>
+  Добро пожаловать
+</template>
