@@ -5,7 +5,7 @@
     </h2>
 
     <div :class="classes.folders">
-      Папки
+      <FolderList :folders="folders" />
     </div>
 
     <div :class="classes.user">
@@ -15,6 +15,14 @@
     </div>
   </aside>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import FolderList from './FolderList.vue'
+import type { Folder } from '../types'
+
+const folders = ref<Folder[]>([])
+</script>
 
 <style module="classes">
 .sidebar {
